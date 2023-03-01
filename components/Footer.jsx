@@ -5,7 +5,7 @@ import { FaSoundcloud, FaSpotify, FaYoutube, FaInstagram, FaTiktok } from "react
 const Footer = () => {
   return (
     
-  <div className='flex flex-col w-screen overflow-x-hidden	'>
+  <div className='absolute bottom-0 left-0 w-screen overflow-x-hidden	'>
       <div className="text-5xl  flex justify-center gap-5 md:gap-12 py-5  text-gray-600 ">
       <a href="https://open.spotify.com/artist/7iHVfd0HAA1CxplQrZcPjt" target="_blank"><FaSpotify /></a>
 

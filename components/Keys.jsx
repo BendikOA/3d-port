@@ -68,7 +68,7 @@ export function Keys(props) {
       atticRef.current.position,
       {
         duration: 2,
-        y: 6,
+        x: 6,
       },
       2
     );

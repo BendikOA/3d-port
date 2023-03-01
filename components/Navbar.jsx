@@ -28,24 +28,24 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-300 ">
         <div className="max-w-[100%] m-auto flex justify-between items-center p-4 text-white">
-            <Link href="#">
-            <h1 style={{color: `${textColor}`}} className="font-bold text-2xl lg:text-4xl ml-4 font-gameboy">
+            <Link href="../">
+            <h1 style={{color: `${textColor}`}} className="font-bold text-2xl lg:text-4xl ml-4 font-gameboy hover:scale-105">
                 B.O.A
             </h1>
             </Link>
             <ul style={{color: `${textColor}`}} className="hidden sm:flex flex-0 mr-4 md:mr-4 font-semibold">
                 <Link href="CV_BOA.pdf" target="_blank">  
-                  <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
+                  <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-105">
                       CV
                   </li>
                 </Link>
-                <Link href="#3d" >
-                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
+                <Link href="nettsider" >
+                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-105">
                         Nettsider
                 </li>
                 </Link>
-                <Link href="#music">
-                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
+                <Link href="portefolje">
+                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-105">
                     3D Portifolio
                     </li>
                 </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className={nav ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-orange-300 text-center ease-in duration-300 bg-fixed bg-center bg-cover custom-img3" : "sm:hidden absolute top-0 left-[120%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gray-500 text-center ease-in duration-300"}>
             <ul className="pb-12 ">
             <li className="font-gameboy p-4 text-2xl text-gray-200  border-2 border-white m-4 bg-black/70 shadow-lg rounded-md">
-                    <Link href="/" onClick={handleNav}>Hjem</Link>
+                    <Link href="../" onClick={handleNav}>Hjem</Link>
                 </li>
                 <li className="font-gameboy p-4 text-2xl text-gray-200  border-2 border-white m-4 bg-black/70 shadow-lg rounded-md">
                     <Link href="CV_BOA.pdf" onClick={handleNav} target="_blank">CV</Link>

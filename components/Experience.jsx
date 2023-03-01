@@ -7,7 +7,7 @@ export const Experience = () => {
   return (
 <>
     <ambientLight intesity={0.1} />
-    <ScrollControls pages={4} damping={0.25} >
+    <ScrollControls pages={3} damping={0.25} >
       <Overlay />
       <Keys />
     </ScrollControls>

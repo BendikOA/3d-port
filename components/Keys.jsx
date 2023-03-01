@@ -59,7 +59,7 @@ export function Keys(props) {
         duration: 1,
         y: 4,
       },
-      0
+      1
     );
 
 

@@ -34,12 +34,12 @@ const Navbar = () => {
             </h1>
             </Link>
             <ul style={{color: `${textColor}`}} className="hidden sm:flex flex-0 mr-4 md:mr-4 font-semibold">
-                <Link href="#">  
+                <Link href="CV_BOA.pdf" target="_blank">  
                   <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
                       CV
                   </li>
                 </Link>
-                <Link href="#3d">
+                <Link href="#3d" >
                     <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
                         Nettsider
                 </li>
@@ -52,13 +52,16 @@ const Navbar = () => {
             </ul>
             {/*mobile*/}
             <div onClick={handleNav} className="block sm:hidden z-10 mr-4">
-                {nav ? <AiOutlineClose className="text-4xl rounded-md hover:" style={{color: `${textColor}`}} /> : <AiOutlineMenu size={30} style={{color: `${textColor}`}} />}
+                {nav ? <AiOutlineClose className="text-4xl rounded-md" style={{color: `${textColor}`}} /> : <AiOutlineMenu size={30} style={{color: `${textColor}`}} />}
             </div>
             {/* mob menu*/}
             <div className={nav ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-orange-300 text-center ease-in duration-300 bg-fixed bg-center bg-cover custom-img3" : "sm:hidden absolute top-0 left-[120%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gray-500 text-center ease-in duration-300"}>
             <ul className="pb-12 ">
+            <li className="font-gameboy p-4 text-2xl text-gray-200  border-2 border-white m-4 bg-black/70 shadow-lg rounded-md">
+                    <Link href="/" onClick={handleNav}>Hjem</Link>
+                </li>
                 <li className="font-gameboy p-4 text-2xl text-gray-200  border-2 border-white m-4 bg-black/70 shadow-lg rounded-md">
-                    <Link href="#" onClick={handleNav}>CV</Link>
+                    <Link href="CV_BOA.pdf" onClick={handleNav} target="_blank">CV</Link>
                 </li>
                 <li className="font-gameboy p-4 text-2xl  border-2 border-white m-4 bg-black/70 shadow-lg rounded-md">
                 <Link href="#3d" onClick={handleNav}>Nettsider</Link>

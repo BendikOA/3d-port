@@ -43,10 +43,10 @@ export const Overlay = () => {
     <Scroll html>
       <div class="w-screen">
         <Section opacity={opacityFirstSection}>
-          <h1 className="font-semibold font-serif text-2xl">
+          <h1 className="font-semibold font-sans text-xl">
             Bendik Ødven Andersen
           </h1>
-          <p className="text-blue-800 ">Webutvikling/3D Design/Audio </p>
+          <p className="text-blue-800">Webutvikling/3D Design/Audio </p>
           
           <p className="mt-3">Hei og velkommen til min portefølje! Jeg er en front-end webutvikler med erfaring innen 3D og lyd. Gjennom årene har jeg utviklet en lidenskap for å skape brukervennlige og estetisk tiltalende nettsteder som gir en unik opplevelse for brukerene. </p>
 

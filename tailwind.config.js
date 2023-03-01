@@ -7,7 +7,6 @@ module.exports = {
   ],  theme: {
 extend: {
       fontFamily: {
-        burtons: "burtons",
         gameboy: "gameboy",
         poppins: ["Poppins", "sans-serif"],
       }

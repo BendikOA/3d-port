@@ -1,44 +1,80 @@
 import React from 'react'
-import Head from 'next/head';
 import Image from 'next/image';
-import web1 from '../public/web1.gif'
-import web4 from '../public/web4.gif'
-import web8 from '../public/web8.gif'
-import web6 from '../public/web6.gif'
-import web5 from '../public/web5.gif'
-import web7 from '../public/web7.gif'
+import w2 from '../public/w2.webp';
+import p4 from '../public/p4.webp';
+import p5 from '../public/p5.webp';
+import vert4 from '../public/vert4.webp';
+import Link from 'next/link';
+import Prosjekter from './Prosjekter';
 
 const Nettdisplay = () => {
   return (
+    <div className="py-10 pb-20 md:px-20 lg:px-40 bg-gradient-to-r from-[#fbab7e] to-[#f7ce68]"  >
+        <div className="md:px-20 lg:px-40 text-center p-10"  data-aos="fade-up">  
 
-      <main className='flex justify-center items-center h-100 mx-0 pt-2'>
+        <div className="px-10 flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
+
+        <div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
+
+          <Prosjekter 
+          title="Property Finder" 
+          backgroundImg={w2} 
+          projectUrl="/property" 
+          objectFit='cover'
+          />
+          </div>
+          <div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
+
+<Prosjekter 
+title="Property Finder" 
+backgroundImg={w2} 
+projectUrl="/property" 
+objectFit='cover'
+/>
+</div>
+
+<div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
+
+<Prosjekter 
+title="Property Finder" 
+backgroundImg={w2} 
+projectUrl="/property" 
+objectFit='cover'
+/>
+</div>
+
+<div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
+<Prosjekter 
+title="Property Finder" 
+backgroundImg={w2} 
+projectUrl="/property" 
+objectFit='cover'
+/>
+</div>
+
+<div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
+<Prosjekter 
+title="Property Finder" 
+backgroundImg={w2} 
+projectUrl="/property" 
+objectFit='cover'
+/>
+</div>
+
+<div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
+<Prosjekter 
+title="Property Finder" 
+backgroundImg={w2} 
+projectUrl="/property" 
+objectFit='cover'
+/>
+</div>
 
 
-      <section className="px-10 md:px-20 lg:px-40 ">
-        <div className="flex flex-col items-center gap-10 py-10 lg:flex-row lg:pl-12 lg:flex-wrap">
-        <div className="basis-1/4 flex-1 object-cover hover:scale-110 duration-200">
-          <a href="https://tamagotchi-781gphu17-bendikoa.vercel.app" target="blank"> <Image className="rounded-md shadow-lg shadow-slate-400 hover:scale-105" src={web8} width={"100%"} /></a>
-          </div>
-          <div className="basis-1/4 flex-1 object-cover hover:scale-110 duration-200">
-            <a href="https://warwick.ac.uk/study/cll/yourwarwick/whatcanadegreedoforme/digital" target="blank"><Image className="rounded-md shadow-lg shadow-slate-400" src={web1} width={"100%"} /></a>
-          </div>
-          <div className="basis-1/4 flex-1 object-cover hover:scale-110 duration-200">
-          <a href="https://codaclef.com" target="blank"><Image className="rounded-md shadow-lg shadow-slate-400" src={web7} width={"100%"} /></a>
-          </div>
-          <div className="basis-1/4 flex-1 object-cover hover:scale-110 duration-200">
-           <a href="https://warwick.ac.uk/fac/cross_fac/iatl/" target="blank"><Image className="rounded-md shadow-lg shadow-slate-400" src={web4} width={"100%"} /></a> 
-          </div>
-   
-          <div className="basis-1/4 flex-1 object-cover hover:scale-110 duration-200">
-          <a href="https://warwick.ac.uk/fac/cross_fac/iatl/study/iatlugmodules/" target="blank"> <Image className="rounded-md shadow-lg shadow-slate-400" src={web5} width={"100%"} /></a>
-          </div>
-          <div className="basis-1/4 flex-1 object-cover hover:scale-110 duration-200">
-          <a href="https://warwick.ac.uk/fac/cross_fac/iatl/student-research/bcur_worldcur_2023/" target="blank"> <Image className="rounded-md shadow-lg shadow-slate-400" src={web6} width={"100%"} /></a>
-          </div>
         </div>
-      </section>
-      </main>
-     )
+    </div>
+    </div>
+  )
 }
 
 export default Nettdisplay

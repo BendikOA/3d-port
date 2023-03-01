@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Nettdisplay from '@/components/Nettdisplay'
+import Navbar_sub from '@/components/Navbar_sub'
 
 
 
@@ -13,10 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="root">
-      <Navbar />
-
-      </div>
+      <Navbar_sub />
+      <Nettdisplay />
     </>
   )
 }

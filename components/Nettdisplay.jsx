@@ -9,7 +9,7 @@ import Prosjekter from './Prosjekter';
 
 const Nettdisplay = () => {
   return (
-    <div className="py-10 pb-20 md:px-20 lg:px-40 bg-gradient-to-r from-[#fbab7e] to-[#f7ce68]"  >
+    <div className="py-10 pb-20 md:px-20 lg:px-40 bg-[#fbab7e]"  >
         <div className="md:px-20 lg:px-40 text-center p-10"  data-aos="fade-up">  
 
         <div className="px-10 flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">

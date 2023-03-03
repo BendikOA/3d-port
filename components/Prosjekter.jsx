@@ -17,9 +17,7 @@ const Prosjekter = () => {
             </Link>
         </div>
   </div>  
-  
 
-  
   
   )
 }

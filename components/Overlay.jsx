@@ -51,7 +51,7 @@ export const Overlay = () => {
 
         <Section opacity={opacityFirstSection}>      
         <div className="">
-            <Image className=" rounded-full w-[64px] h-[64px] flex float-left mr-4" src={benne}/>
+            <Image className=" rounded-full w-[64px] h-[64px] ml-[-20px] flex float-left mr-4" src={benne}/>
             <h1 className="font-semibold font-gameboy text-[20px] text-[#15346F] pt-4">
                Bendik
              </h1>
@@ -84,7 +84,7 @@ export const Overlay = () => {
   <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Drei/Fiber</div>
 
 </div> 
- <p className="animate-bounce mt-[-140px] text-md font-semibold">↓  Scroll videre ↓ </p>
+ <p className="animate-bounce mt-[-100px] text-md font-semibold">↓  Scroll videre ↓ </p>
 
       
         </Section>
@@ -111,14 +111,7 @@ Jeg har drevet med 3D og audio-design i 10 år. Dette er jeg glad i å kombinere
         </Section>
         
       </div>
-      <div className='absolute bottom-0 left-0 w-screen overflow-x-hidden	'>
-    <p className='text-[16px] text-[#D3DEEF] ml-[200px] mb-[40px]'>
-    Webutvikling/3D Design/Audio
 
-    </p>
-
-
-    </div> 
     </Scroll>
     
     

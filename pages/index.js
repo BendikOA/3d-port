@@ -4,8 +4,9 @@ import styles from '@/styles/Home.module.css'
 import Footer from '@/components/Footer'
 import { Canvas } from '@react-three/fiber';
 import { Experience } from '../components/Experience';
-import Navbar from '@/components/Navbar'
+import Navbar_sub from '@/components/Navbar_sub'
 import { motion as m } from "framer-motion";
+import { useFrame } from '@react-three/fiber';
 
 
 
@@ -19,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div id="root">
-      <Navbar />
+      <Navbar_sub />
       <Canvas camera={{
         fov: 64,
         position: [2.3, 1.5, 2.3] , }}

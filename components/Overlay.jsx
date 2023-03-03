@@ -74,13 +74,14 @@ export const Overlay = () => {
 
         <p className="mt-3 max-w-[434px] font-gameboy pl-2 mb-2">Her er noen teknologier jeg er veldig komfortabel med:</p>     
         <div class="grid grid-cols-2 grid-rows-6 gap-4">
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">React.js</div>
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">Next.js</div>
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">Vite.js</div>
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">Vue.js</div>
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">Tailwind</div>
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">API/REST API</div>
-  <div class="bg-[#e4e4e440] rounded-lg px-20 py-6 border-l-2 shadow-md border-[#B4C6E140] text-center font-gameboy text-[18px] text-[#173D86]">Three.js/Drei/Fiber</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">React.js</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Next.js</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Vite.js</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Vue.js</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Tailwind</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">API/REST API</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Three.js</div>
+  <div class="bg-[#e4e4e440] rounded-lg border-l-2 shadow-md border-[#B4C6E140] flex text-center justify-center items-center font-gameboy text-[18px] text-[#173D86] p-4">Drei/Fiber</div>
 
 </div> 
  <p className="animate-bounce mt-[-140px] text-md font-semibold">↓  Scroll videre ↓ </p>

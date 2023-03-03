@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Navbar = () => {
     const [nav, setNav] = useState(false) ;
     const [color, setColor] = useState('transparent');
-    const [textColor, setTextColor] = useState('#36454F	');
+    const [textColor, setTextColor] = useState('#080808');
 
     const handleNav = () => {
         setNav(!nav)
@@ -16,10 +16,10 @@ const Navbar = () => {
         const changeColor = () => {
         if (window.scrollY >=90) {
             setColor('transparent');
-            setTextColor('#36454F');
+            setTextColor('#080808');
         } else {
             setColor('transparent');
-            setTextColor('#36454F')
+            setTextColor('#080808')
         }
     }; 
     window.addEventListener('scroll', changeColor);
@@ -27,10 +27,9 @@ const Navbar = () => {
 
   return (
     <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-300 ">
-        <div className="max-w-[100%] m-auto flex justify-between items-center p-4 text-white">
+        <div className="max-w-[100%] m-auto flex justify-between items-center p-4 text-[#080808]">
             <Link href="../">
-            <h1 style={{color: `${textColor}`}} className="font-bold text-2xl lg:text-4xl ml-4 font-gameboy hover:scale-105">
-                B.O.A
+            <h1 style={{color: `${textColor}`}} className="absolute left-[41px] top-[34px] text-[16px] hover:scale-105 font-gameboy font-normal">
             </h1>
             </Link>
             <ul style={{color: `${textColor}`}} className="hidden sm:flex flex-0 mr-4 md:mr-4 font-semibold">

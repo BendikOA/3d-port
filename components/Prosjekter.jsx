@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Prosjekter = () => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full border-4 border-black group hover:bg-gradient-to-r from-[#5641D5] to-[#709DFF]'>
+    <div className='relative flex items-center justify-center h-auto w-full border-4 border-black group hover:bg-gradient-to-b from-[#5641D5] to-[#709DFF]'>
             <Image className='group-hover:opacity-10 cursor-pointer' src={web1} alt="/" />
              <div className='hidden group-hover:block absolute items-center justify-center '>
              <h3 className='text-2xl font-semibold text-white tracking-wider'> University of Warwick</h3>

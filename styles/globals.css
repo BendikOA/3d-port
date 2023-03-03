@@ -10,7 +10,7 @@ html {
 
 @font-face {
   font-family: "gameboy";
-  src: url('../public/gameboy.ttf')
+  src: url('../public/InconstantVF.ttf')
 }
 
 @font-face {
@@ -30,8 +30,8 @@ html {
   height: 100vh;
   background-color: #FBAB7E;
   /*background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
-    background-image: linear-gradient(62deg, #F5F7FA 0%, #B8C6DB 100%); 
+  background: linear-gradient(180deg, #D8E3F2 0%, #4E6FA2 99.99%, rgba(85, 111, 152, 0.66) 100%);};
 
-
-};
-
+.custom-image {
+  background-image: url('../public/ab2.webp');
+}

@@ -1,42 +1,91 @@
-import React from 'react';
-import Image from 'next/image';
-import vert3 from '../public/vert3.gif'
-import vert1 from '../public/vert1.webp'
-import vert4 from '../public/vert4.webp'
-import vert2 from '../public/vert2.webp'
-import w1 from '../public/w1.webp'
-import w2 from '../public/w2.webp'
+import * as THREE from "three";
+import { Suspense, useRef } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Preload, Image as ImageImpl, ScrollControls, Scroll, useScroll, Html, useProgress } from "@react-three/drei";
+
+function Image(props) {
+  const ref = useRef();
+  const group = useRef();
+  const data = useScroll();
+
+  return (
+    <group ref={group}>
+      <ImageImpl ref={ref} {...props} />
+    </group>
+  );
+}
+
+function Page({ m = 0.4, urls, ...props }) {
+  const { width } = useThree((state) => state.viewport);
+  const w = width < 10 ? 1.5 / 3 : 1 / 3;
+  return (
+    <group {...props}>
+      <Image position={[-width * w, 0, -1]} scale={[width * w - m * 2, 5, 1]} url={urls[0]} />
+      <Image position={[0, 0, 0]} scale={[width * w - m * 2, 5, 1]} url={urls[1]} />
+      <Image position={[width * w, 0, 1]} scale={[width * w - m * 2, 5, 1]} url={urls[2]} />
+    </group>
+  );
+}
+
+function Pages() {
+  const { width } = useThree((state) => state.viewport);
+  return (
+    <>
+      <Page position={[-width * 1, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 0, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 1, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 2, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 3, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+
+      <Page position={[width * 4, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 5, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 6, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 7, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+      <Page position={[width * 8, 0, 0]} urls={["ab2.webp", "/w1.webp", "/w2.webp"]} />
+    </>
+  );
+}
+
+function Loader() {
+  const progress = useProgress(state => state.progress)
+  if (progress !== 100) {
+    return (
+      <Html center wrapperClass="loader-div">
+        {progress.toFixed()}% loaded
+      </Html>
+    );
+  }
+
+  return null
+}
+
 
 const Gallery = () => {
   return (
-    <div>
-        <div className="py-10 pb-20 md:px-20 lg:px-40 bg-gradient-to-r from-[#B8C6DB] to-[#FFFFFF" id="3d" >
-        <div className="md:px-20 lg:px-40 text-center p-10"  data-aos="fade-up">  
-          </div>
-        <div className="px-10 flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
-            <div className="basis-1/3 flex-1 object-cover" data-aos="fade-up">
-              <Image className=" border-2 border-black" src={w1} width={"100%"} />
-            </div>
-            <div className="basis-1/3 flex-1 object-cover" data-aos="fade-up" data-aos-delay="100">
-              <Image className=" border-2 border-black" src={w2} width={"100%"} />
-            </div>
-          </div>
-          
-          <div className="px-10 flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/6 flex-1 object-cover" data-aos="fade-up" data-aos-delay="200">
-              <Image className=" border-2 border-black" src={vert1} width={"100%"} />
-            </div>
-            <div className="basis-1/6 flex-1 object-cover" data-aos="fade-up" data-aos-delay="300">
-              <Image className=" border-2 border-black" src={vert2} width={"100%"} />
-            </div>
-            <div className="basis-1/6 flex-1 object-cover mx-auto" data-aos="fade-up" data-aos-delay="400">
-              <Image className=" border-2 border-black" src={vert3} width={"100%"} />
-            </div>
-            <div className="basis-1/6 flex-1 object-cover" data-aos="fade-up" data-aos-delay="500">
-              <Image className=" border-2 border-black" src={vert4} width={"100%"} />
-            </div>
-        </div>
-        </div>
+    <div  className="h-screen bg-gradient-to-t from-[#4E6FA2] to-[#D8E3F2]">
+      <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
+        <Loader />
+        <Suspense fallback={null}>
+          <ScrollControls infinite horizontal damping={1} pages={6} distance={1}>
+            <Scroll>
+              <Pages />
+            </Scroll>
+            <Scroll html>
+              {/* <h1 style={{ position: "absolute", top: "20vh", left: "-75vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "25vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "125vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "225vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "325vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "425vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "525vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "625vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "725vw" }}></h1>
+              <h1 style={{ position: "absolute", top: "20vh", left: "825vw" }}></h1> */}
+            </Scroll>
+          </ScrollControls>
+          <Preload />
+        </Suspense>
+      </Canvas>
     </div>
   )
 }

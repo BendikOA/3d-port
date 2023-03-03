@@ -27,7 +27,7 @@ const Navbar_sub = () => {
     }, []);
 
   return (
-    <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-300 ">
+    <div style={{backgroundColor: `${color}`}} className="absolute left-0 top-0 w-full z-10 ease-in duration-300 ">
         <div className="max-w-[100%] m-auto flex justify-between items-center p-4 text-white">
             <Link href="../">
             <h1 style={{color: `${textColor}`}} className="font-bold text-2xl lg:text-4xl ml-4 font-gameboy hover:scale-110">
@@ -36,17 +36,17 @@ const Navbar_sub = () => {
             </Link>
             <ul style={{color: `${textColor}`}} className="hidden sm:flex flex-0 mr-4 md:mr-4 font-semibold">
                 <Link href="CV_BOA.pdf" target="_blank">  
-                  <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
+                  <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md bg-white hover:scale-110">
                       CV
                   </li>
                 </Link>
                 <Link href="nettsider" >
-                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
+                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md bg-white hover:scale-110">
                         Nettsider
                 </li>
                 </Link>
                 <Link href="portefolje">
-                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md  bg-slate-100 hover:scale-110">
+                    <li className="p-4 text-sm lg:text-md font-gameboy  mr-1 ml-1 lg:mr-2 lg:ml-2 border-2 shadow-md rounded-md bg-white hover:scale-110">
                     3D Portifolio
                     </li>
                 </Link>

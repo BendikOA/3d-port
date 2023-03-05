@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar_sub from '@/components/Navbar_sub'
-import Gallery from '@/components/Gallery'
+import Masonry from '@/components/Masonry'
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar_sub />
-      <Gallery />
+      <Masonry />
     </>
   )
 }

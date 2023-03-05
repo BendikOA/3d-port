@@ -28,6 +28,22 @@ const Masonry = () => {
 <div className="rounded-lg bg-[#D8E3F2] mt-2 p-2 break-inside">
 <img src='./web8.gif' alt="" />  
 </div>
+<div className="rounded-lg bg-[#D8E3F2] mt-2 p-2 break-inside">
+<img src='./smi1.webp' alt="" />  
+</div>
+<div className="rounded-lg bg-[#D8E3F2] mt-2 p-2 break-inside">
+<img src='./smi2.webp' alt="" />  
+</div>
+<div className="rounded-lg bg-[#D8E3F2] mt-2 p-2 break-inside">
+<img src='./computer.webp' alt="" />  
+</div>
+<div className="rounded-lg bg-[#D8E3F2] mt-2 p-2 break-inside">
+<img src='./keyboard.webp' alt="" />  
+</div>
+<div className="rounded-lg bg-[#D8E3F2] mt-2 p-2 break-inside">
+<img src='./RC20.webp' alt="" />  
+</div>
+
 
 
 </div>

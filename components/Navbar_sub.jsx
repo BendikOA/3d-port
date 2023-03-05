@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Image from 'next/image'
 
 
 const Navbar_sub = () => {
-  const [nav, setNav] = useState(false);
-
-
-  const handleNav = () => {
-    setNav(!nav)
-  }
-
-
-
   return (
     <div className="absolute left-0 top-0 w-full z-10 ease-in duration-300 ">
       <Link href="../" >
